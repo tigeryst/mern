@@ -1,6 +1,7 @@
 # Ignore artifacts:
+public
 build
+dist
 coverage
-
-# Ignore HTML:
-*.html
+logs
+node_modules

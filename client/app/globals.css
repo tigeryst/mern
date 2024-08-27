@@ -1,0 +1,30 @@
+:root {
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-black: 900;
+
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.625rem;
+  --fs-900: 2.5rem;
+
+  --clr-white: #ffffff;
+  --clr-neutral-100: #cecece;
+  --clr-neutral-400: #7d7d7d;
+  --clr-neutral-600: #505050;
+  --clr-neutral-700: #373737;
+  --clr-neutral-900: #252525;
+
+  --clr-accent-400: #009581;
+}
+
+html {
+  background-color: var(--clr-white);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  line-height: 1.7;
+  color: var(--clr-neutral-400);
+}

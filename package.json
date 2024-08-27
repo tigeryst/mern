@@ -1,14 +1,16 @@
 {
-  "name": "mern",
+  "name": "mini-mern",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "Mini-mern project",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tiger Yotsawat",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "concurrently": "^8.2.2"
   }
 }

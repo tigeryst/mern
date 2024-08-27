@@ -1,0 +1,58 @@
+/* Apply box-sizing: border-box to all elements and their ::before and ::after pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding, and inherit font settings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Inform the browser that the site supports both dark and light color schemes and apply hanging punctuation to the first and last characters in lines */
+html {
+  color-scheme: dark light;
+  hanging-punctuation: first last;
+}
+
+/* Ensure the body element takes up at least 100% of the viewport height */
+body {
+  min-height: 100svh;
+}
+
+/* Set media elements to display as block-level elements and prevent overflow */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Apply wrapping to long headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Ensure lines are a comfortable reading length and prevent orphans */
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+/* Apply smooth scrolling to elements with a target pseudo-class when no reduced motion preference is set */
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
